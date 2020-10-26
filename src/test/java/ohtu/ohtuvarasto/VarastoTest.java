@@ -39,6 +39,9 @@ public class VarastoTest {
         Varasto testivarasto2 = new Varasto(20);
 
         assertEquals(20, testivarasto2.getTilavuus(), vertailuTarkkuus);
+
+        // Hajottava
+        assertEquals(-999, testivarasto2.getTilavuus(), vertailuTarkkuus);
     }
 
     @Test
