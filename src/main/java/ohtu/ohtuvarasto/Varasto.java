@@ -21,7 +21,8 @@ public class Varasto {
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
         this.tilavuus = tilavuus;
         
-        if (tilavuus < 0) {
+        if (tilavuus < 0) 
+        {
             // virheellinen, nollataan
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
         }
