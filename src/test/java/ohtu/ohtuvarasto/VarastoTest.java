@@ -45,7 +45,7 @@ public class VarastoTest {
     public void konstruktoriLuoVarastonSaldolla() {
         Varasto testivarasto = new Varasto(-2, 2);
 
-        assertEquals(0, testivarasto.getTilavuus(), vertailuTarkkuus);
+        assertEquals(0.0, testivarasto.getTilavuus(), vertailuTarkkuus);
         assertEquals(-2, testivarasto.getSaldo(), vertailuTarkkuus);
 
         Varasto testivarasto2 = new Varasto(20, 2);
@@ -61,7 +61,7 @@ public class VarastoTest {
         Varasto testivarasto4 = new Varasto(20, -2);
 
         assertEquals(20, testivarasto4.getTilavuus(), vertailuTarkkuus);
-        assertEquals(0, testivarasto4.getSaldo(), vertailuTarkkuus);
+        assertEquals(-2, testivarasto4.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
